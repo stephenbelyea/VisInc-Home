@@ -1,0 +1,49 @@
+.home .menu_bgs .menu_bg{
+	background: #58b6dd;
+	width: 0px;
+	height: 0px;
+	display: block;
+	position: absolute;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	zoom: 1;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	transition: all .2s .2s;
+	-moz-transition: all .2s .2s;
+	-webkit-transition: all .2s .2s;
+	-o-transition: all .2s .2s;
+}
+.home .menu_bgs .menu_bg.open{
+	width: 200px;
+	height: 200px;
+	zoom: 1;
+	filter: alpha(opacity=100);
+	opacity: 1;
+	transition: all .3s 0s;
+	-moz-transition: all .3s 0s;
+	-webkit-transition: all .3s 0s;
+	-o-transition: all .3s 0s;
+}
+.home header ul.sub-menu{
+	display: block !important;
+	zoom: 1;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	transition: all .2s 0s;
+	-moz-transition: all .2s 0s;
+	-webkit-transition: all .2s 0s;
+	-o-transition: all .2s 0s;
+}
+.home header ul.sub-menu.show{
+	display: block !important;
+	zoom: 1;
+	filter: alpha(opacity=100);
+	opacity: 1 !important;
+	transition: all .4s .3s;
+	-moz-transition: all .4s .3s;
+	-webkit-transition: all .4s .3s;
+	-o-transition: all .4s .3s;
+}
