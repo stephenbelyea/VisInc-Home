@@ -22,10 +22,18 @@
 	zoom: 1;
 	filter: alpha(opacity=100);
 	opacity: 1;
-	transition: all .3s 0s;
-	-moz-transition: all .3s 0s;
-	-webkit-transition: all .3s 0s;
-	-o-transition: all .3s 0s;
+	-webkit-transition: all 0.4s cubic-bezier(0.250, 0.250, 0.190, 1); /* older webkit */
+	-webkit-transition: all 0.4s cubic-bezier(0.250, 0.250, 0.190, 1.485); 
+   	-moz-transition: all 0.4s cubic-bezier(0.250, 0.250, 0.190, 1.485); 
+    -ms-transition: all 0.4s cubic-bezier(0.250, 0.250, 0.190, 1.485); 
+    -o-transition: all 0.4s cubic-bezier(0.250, 0.250, 0.190, 1.485); 
+    transition: all 0.4s cubic-bezier(0.250, 0.250, 0.190, 1.485); /* custom */
+	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.190, 1); /* older webkit */
+	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.190, 1.485); 
+   	-moz-transition-timing-function: cubic-bezier(0.250, 0.250, 0.190, 1.485); 
+    -ms-transition-timing-function: cubic-bezier(0.250, 0.250, 0.190, 1.485); 
+    -o-transition-timing-function: cubic-bezier(0.250, 0.250, 0.190, 1.485); 
+    transition-timing-function: cubic-bezier(0.250, 0.250, 0.190, 1.485); /* custom */
 }
 .home header ul.sub-menu{
 	display: block !important;
@@ -42,8 +50,8 @@
 	zoom: 1;
 	filter: alpha(opacity=100);
 	opacity: 1 !important;
-	transition: all .4s .3s;
-	-moz-transition: all .4s .3s;
-	-webkit-transition: all .4s .3s;
-	-o-transition: all .4s .3s;
+	transition: all .4s .4s;
+	-moz-transition: all .4s .4s;
+	-webkit-transition: all .4s .4s;
+	-o-transition: all .4s .4s;
 }
